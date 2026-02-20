@@ -116,6 +116,8 @@ body {
   margin: auto;
   grid-row: 1 / 7;
   cursor: pointer;
+  object-fit: contain;     /* keeps aspect ratio, fits inside box */
+  object-position: center; /* optional */
 }
 
 .sorter > .text {
@@ -218,11 +220,11 @@ label:hover {
 }
 
 .result.image {
-  height: 175px;
+  height: 115px;
 }
 
 .result.image img {
-  height: 160px;
+  height: 100px;
 }
 
 .result.spacer {
